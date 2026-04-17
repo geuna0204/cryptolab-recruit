@@ -41,3 +41,7 @@ h3 {
   font-size: 20px;
   font-weight: 700;
 }
+
+li {
+  word-break: keep-all;
+}

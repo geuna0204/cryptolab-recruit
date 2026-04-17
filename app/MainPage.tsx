@@ -49,9 +49,10 @@ const MainPage = () => {
   return (
     <div className="px-4 max-w-180 w-full py-16 flex flex-col gap-8">
       <h1>크립토랩과 함께할 분을 찾습니다.</h1>
-      <p className="text-blue-500 font-bold text-lg">
+      <p className="text-blue-500 font-bold text-xl">
         “크립토랩은 세계를 무대로 암호 기술의 한계를 넘어가는 도전을 이어가고
-        있습니다. 치열하게 고민하며, 함께 세상을 변화시킬 동료를 기다립니다.”
+        있습니다. <br /> 치열하게 고민하며, 함께 세상을 변화시킬 동료를
+        기다립니다.”
       </p>
       <div className={`${styles.contentLayout}`}>
         <div>
@@ -61,13 +62,14 @@ const MainPage = () => {
         <ul className={`${styles.listLayout}`}>
           <li>
             암호학계 석학인 천정희 대표가 창업한 기술 기반 스타트업으로,
-            동형암호(Fully Homomorphic Encryption, FHE) 기술을 기반으로 데이터
-            보안과 AI기술을 연구·개발하고 있습니다.
+            <b> 동형암호(Fully Homomorphic Encryption, FHE)</b> 기술을 기반으로
+            데이터 보안과 AI기술을 연구·개발하고 있습니다.
           </li>
           <li>
             민감한 데이터를 복호화하지 않고도 안전하게 활용할 수 있는 보안
             기술과 제품을 개발하며, 세계적 수준의 암호 연구 역량을 바탕으로
-            차세대 프라이버시 보호 기술의 제품화와 사업화를 추진하고 있습니다.
+            <b> 차세대 프라이버시 보호 기술</b>의 제품화와 사업화를 추진하고
+            있습니다.
           </li>
           <li>
             2022년 <b>210억원 규모의 시리즈 A 투자</b>를 유치하였으며, 현재
@@ -161,8 +163,8 @@ const MainPage = () => {
           <h2>채용절차</h2>
         </div>
         <span>
-          서류접수 → 직무테스트(필요 시) → 1차 면접(실무진) → 2차 면접(임원진) →
-          CEO 1:1 → 최종합격
+          서류접수 ➡️ 직무테스트(필요 시) ➡️ 1차 면접(실무진) ➡️ 2차
+          면접(임원진) ➡️ CEO 1:1 ➡️ 최종합격
         </span>
       </div>
 
@@ -178,6 +180,10 @@ const MainPage = () => {
           <li>
             입사지원서와 함께 CV 또는 포트폴리오를 보유하신 경우 함께 제출해
             주세요.
+          </li>
+          <li>
+            제출된 서류는 채용 목적 외에는 사용되지 않으며, 채용 종료 후 관련
+            법령에 따라 안전하게 폐기됩니다.
           </li>
         </ul>
         <a
@@ -201,16 +207,13 @@ const MainPage = () => {
               </span>
             </a>
           </div>
-          <span className="">
-            제출된 서류는 채용 목적 외에는 사용되지 않으며, 채용 종료 후 관련
-            법령에 따라 안전하게 폐기됩니다.
-          </span>
         </div>
         <a
-          className="flex items-center text-gray-400 self-center pt-10"
+          className="flex items-center text-gray-400 text-xl self-center pt-16"
           href={CRYPTOLAB_URL}
           target="_blank"
           rel="noopener noreferrer">
+          <IconLink className="w-6 h-6 fill-gray-400" />
           <span className="font-bold">{`cryptolab.co.kr`}</span>
         </a>
       </div>

@@ -50,9 +50,8 @@ const MainPage = () => {
     <div className="px-4 max-w-180 w-full py-16 flex flex-col gap-8">
       <h1>크립토랩과 함께할 분을 찾습니다.</h1>
       <p className="text-blue-500 font-bold text-xl break-keep">
-        “크립토랩은 세계를 무대로 암호 기술의 한계를 넘어가는 도전을 이어가고
-        있습니다. <br /> 치열하게 고민하며, 함께 세상을 변화시킬 동료를
-        기다립니다.”
+        “크립토랩은 암호 기술의 한계를 넘어가는 도전을 이어가고 있습니다. <br />{" "}
+        치열하게 고민하며, 함께 세상을 변화시킬 동료를 기다립니다.”
       </p>
       <div className={`${styles.contentLayout}`}>
         <div>
@@ -193,16 +192,21 @@ const MainPage = () => {
         <a
           href="/resource/cryptolab_application_form.doc"
           download="cryptolab_application_form.doc"
-          className="font-bold flex items-center gap-1 text-white  bg-blue-400 hover:bg-blue-500 py-2 px-4 rounded-lg w-fit">
+          className="font-bold flex items-center gap-1 text-white  bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-lg w-fit">
           입사지원서 다운로드
           <IconDownload className="fill-white h-6 w-6 " />
         </a>
         <div className={`${styles.contentLayout} pt-4`}>
           <h3>서류 접수 및 문의</h3>
           <div className="border flex justify-between items-center rounded-xl border-blue-300 p-4 bg-blue-50 sm:flex-row gap-4 flex-col">
-            <span>김한슬 (경영관리팀 · 매니저)</span>
+            <div className="flex flex-col gap-1">
+              <span className="font-bold">김한슬</span>
+              <span className="text-sm text-gray-500">
+                (경영관리팀 · 매니저)
+              </span>
+            </div>
             <a
-              className="flex items-center gap-1 w-fit bg-blue-400 rounded-lg py-2 px-4"
+              className="flex items-center gap-1 w-fit bg-blue-400 hover:bg-blue-500 rounded-lg py-2 px-4"
               target="_blank"
               href={`mailto:hskim@cryptolab.co.kr`}>
               <IconMail className="w-5 h-5 fill-white" />
@@ -213,12 +217,12 @@ const MainPage = () => {
           </div>
         </div>
         <a
-          className="flex items-center text-gray-400 text-xl self-center pt-16"
+          className="flex items-center text-gray-400 text-xl gap-1 self-center pt-16"
           href={CRYPTOLAB_URL}
           target="_blank"
           rel="noopener noreferrer">
-          <IconLink className="w-6 h-6 fill-gray-400" />
           <span className="font-bold">{`cryptolab.co.kr`}</span>
+          <IconLink className="w-6 h-6 fill-gray-400" />
         </a>
       </div>
     </div>

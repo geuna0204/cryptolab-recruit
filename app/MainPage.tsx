@@ -49,7 +49,7 @@ const MainPage = () => {
   return (
     <div className="px-4 max-w-180 w-full py-16 flex flex-col gap-8">
       <h1>크립토랩과 함께할 분을 찾습니다.</h1>
-      <p className="text-blue-500 font-bold text-xl">
+      <p className="text-blue-500 font-bold text-xl break-keep">
         “크립토랩은 세계를 무대로 암호 기술의 한계를 넘어가는 도전을 이어가고
         있습니다. <br /> 치열하게 고민하며, 함께 세상을 변화시킬 동료를
         기다립니다.”
@@ -120,6 +120,10 @@ const MainPage = () => {
               Business Development: 시장과 고객의 니즈를 바탕으로 사업 기회를
               발굴하고 파트너십을 확장합니다.
             </li>
+            <li>
+              Cryptography Engineer: 동형암호 기술을 연구·개발하고, 암호
+              알고리즘의 구현 및 최적화를 수행합니다.
+            </li>
           </ul>
         </div>
       </div>
@@ -162,7 +166,7 @@ const MainPage = () => {
           <span className={`${styles.titleTag}`}>HIRING PROCESS</span>
           <h2>채용절차</h2>
         </div>
-        <span>
+        <span className="break-keep">
           서류접수 ➡️ 직무테스트(필요 시) ➡️ 1차 면접(실무진) ➡️ 2차
           면접(임원진) ➡️ CEO 1:1 ➡️ 최종합격
         </span>

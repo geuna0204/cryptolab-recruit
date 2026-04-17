@@ -199,7 +199,7 @@ const MainPage = () => {
         <div className={`${styles.contentLayout} pt-4`}>
           <h3>서류 접수 및 문의</h3>
           <div className="border flex justify-between items-center rounded-xl border-blue-300 p-4 bg-blue-50 sm:flex-row gap-4 flex-col">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col items-center sm:items-start">
               <span className="font-bold">김한슬</span>
               <span className="text-sm text-gray-500">
                 (경영관리팀 · 매니저)

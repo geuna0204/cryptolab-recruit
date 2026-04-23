@@ -6,6 +6,10 @@ import IconDownload from "@/assets/icon_download.svg";
 import IconLink from "@/assets/icon_link.svg";
 
 const CRYPTOLAB_URL = "https://www.cryptolab.co.kr/";
+const WANTED_URL = "https://www.wanted.co.kr/company/13900";
+const SARAMIN_URL =
+  "https://m.saramin.co.kr/job-search/company-info-view/recruit?csn=RmdxS1FkTXZWa2lzdklUQ0l6cEJ5dz09&t_ref_content=generic";
+
 const RECRUIT_POSITIONS = [
   {
     title: "정규직",
@@ -125,6 +129,29 @@ const MainPage = () => {
             </li>
           </ul>
         </div>
+        <div className={`${styles.contentLayout}`}>
+          <h3>더 자세한 직무 정보가 궁금하다면? 🤔</h3>
+          <ul className={`${styles.listLayout}`}>
+            <li>
+              <a
+                className="flex items-center text-blue-500 text-base gap-1 self-center"
+                href={SARAMIN_URL}
+                target="_blank"
+                rel="noopener noreferrer">
+                <span className="font-bold">{`사람인 ➡️`}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex items-center text-blue-500 text-base gap-1 self-center"
+                href={WANTED_URL}
+                target="_blank"
+                rel="noopener noreferrer">
+                <span className="font-bold">{`원티드 ➡️`}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <hr className={`${styles.hr}`} />
@@ -201,9 +228,7 @@ const MainPage = () => {
           <div className="border flex justify-between items-center rounded-xl border-blue-300 p-4 bg-blue-50 sm:flex-row gap-4 flex-col">
             <div className="flex flex-col items-center sm:items-start">
               <span className="font-bold">김한슬</span>
-              <span className="text-sm text-gray-500">
-                (경영관리팀 · 매니저)
-              </span>
+              <span className="text-sm text-gray-500">경영관리팀 · 매니저</span>
             </div>
             <a
               className="flex items-center gap-1 w-fit bg-blue-400 hover:bg-blue-500 rounded-lg py-2 px-4"
